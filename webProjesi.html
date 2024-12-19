@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relax Emlak</title>
+  <link rel="icon" href="img/logo3.png" type="image/x-icon" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4,h5{
+      overflow-y: hidden;
+    }
+    #kutu1,
+    #kutu2 {
+      padding: 50px;
+      text-align: center;
+      background-color: #000000;
+      border: solid 0px #ffffff;
+      color: white;
+    }
+
+    body {
+      background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+    }
+
+    .jumbotron {
+      background-color: black;
+
+    }
+    .card-cover {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .site-header {
+      background-color: rgba(0, 0, 0, .85);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+    .flex-equal>* {
+      flex: 1;
+    }
+
+    @media (min-width: 768px) {
+      .flex-md-equal>* {
+        flex: 1;
+      }
+    }
+
+    .container {
+      max-width: 960px;
+    }
+
+    .pricing-header {
+      max-width: 700px;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none; 
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+    .navbar {
+      background-color: black;
+    }
+
+    .bariyer {
+      background-color: black;
+    }
+
+    #myCarousel {
+      margin-top: -25px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="d-block px-3 py-2 text-bold text-white old-bv" style="background-color: black;">
+      <svg style="margin-left: 15px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-telephone" viewBox="0 0 16 16">
+        <path
+          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+      </svg>
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">0232 654 XX XX</font>
+      </font>
+      <svg style="margin-left: 20px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-envelope" viewBox="0 0 16 16">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+      </svg>
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">mail@relaxemlak.com</font>
+      </font>
+      <a style="margin-left:1070px;text-decoration: none;" href="https://tr-tr.facebook.com/">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></font>
+        </font>
+      </a>
+      <a style="text-decoration: none;" href="https://twitter.com/">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></font>
+        </font>
+      </a>
+      <a style="text-decoration: none;" href="https://www.instagram.com/?hl=tr">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></font>
+        </font>
+      </a>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="webProjesi.html">Relax Emlak</a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          Menü</button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ilanlar.html">İlanlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="danismanlar.html">Danışmanlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="projeler.html">Projeler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ofisler.html">Ofisler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="uyeol.html">Üye Ol</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="girisyap.html">Giriş Yap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="iletisim.html">İletişim</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar altı metin -->
+
+    <div class="bariyer p-4 p-md-5 mb-4 text-white rounded-bottom" >
+      <div class="col-md-6 px-0">
+        <h1 style="color:red;" class="display-4" >İSMAİL</h1>
+        <p class="lead my-3">Türkiyenin en büyük emlak şirketi!</p>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img style="max-width: %100px;max: height % 100px;" class="img-fluid" src="img/webProjesi2.jpg">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 style="text-decoration-color: black;">Üye Ol</h1>
+              <p>Hemen üye olun.</p>
+              <p><a class="btn btn-lg btn-light" href="uyeol.html">Üye ol</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img style="max-width: %100px;max: height % 100px;" class="img-fluid" src="img/webProjesi4.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="overflow-y:hidden ;">Giriş Yap</h1>
+              <p>Hemen giriş yapın.</p>
+              <p><a class="btn btn-lg btn-light" href="girisyap.html">Giriş Yap</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img style="max-width: %100px;max: height % 100px;" class="img-fluid" src="img/webProjesi3.jpg">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 style="overflow-y:hidden ;">İletişim</h1>
+              <p>Bizimle iletişime geçin.</p>
+              <p><a class="btn btn-lg btn-light" href="iletisim.html">İletişime geç</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Önceki</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonraki</span>
+      </button>
+    </div>
+
+
+    <!-- Blok -->
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div style="background-color:black;margin-top: -16px;"
+        class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Relax Emlak Temsilciliği Açmak İster misiniz?</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-light shadow-sm mx-auto text-black"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px ;"><br><br><br><br> Siz de Türkiye’nin
+          markası olan RELAX EMLAK ailesine franchisee olarak katılabilirsiniz. Vereceğimiz destekler ile kısa sürede
+          kazanmaya başlayabilirsinizdir.</div>
+      </div>
+
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden ">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Sözleşmeli İşletme Açmak İster misiniz?</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="shadow-sm mx-auto text-white"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;background-color: black;"><br><br><br><br>Relax
+          Emlak işletmelerin yönetim, organizasyon ve pazarlama teknolojilerini alarak işletmelerimizin bulunduğu
+          yerlerde kendi işletmenizi broker olarak açabilirsiniz.</div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden ">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Sözleşmeli İşletme Açmak İster misiniz?</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="shadow-sm mx-auto text-white"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;background-color: black;"><br><br><br><br>Relax
+          Emlak işletmelerin yönetim, organizasyon ve pazarlama teknolojilerini alarak işletmelerimizin bulunduğu
+          yerlerde kendi işletmenizi broker olarak açabilirsiniz.</div>
+      </div>
+
+      <div style="background-color:black;margin-top: -16px;"
+        class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2  class="display-5">Relax Emlak Temsilciliği Açmak İster misiniz?</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-light shadow-sm mx-auto text-black"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px ;"><br><br><br><br> Siz de Türkiye’nin
+          markası olan RELAX EMLAK ailesine franchisee olarak katılabilirsiniz. Vereceğimiz destekler ile kısa sürede
+          kazanmaya başlayabilirsinizdir.</div>
+      </div>
+
+    </div>
+
+    <!--İlanlar-->
+
+    <div style="margin-top:-16px; max-width: %60;" class="jumbotron text-white">
+      <h1 class="display-3">EV YA DA ARSA MI ARIYORSUN?</h1><br>
+      <p>İlanları görmek için hemen ziyaret edin.</p>
+      <hr>
+      <p style="font-size:xx-large;">Mevcut ilanlarımızı ziyaret edin. Bakın, görün, araştırın!</p>
+      <hr>
+      <p class="lead">↓↓↓↓↓ İlanları görmek için ziyaret edin.</p>
+      <a href="ilanlar.html" style="background-color:white;color: black;" class="btn">İlanlar</a>
+    </div>
+
+    <!--Sayfalar Kısmı-->
+
+
+    <div class="row">
+      <div class="col-md-5 ">
+        <div class="card border-0">
+          <img class="card-img img-fluid" src="img/ustsol.jpg" alt="Haber Resmi">
+          <div class="card-img-overlay card-img-overlay-text">
+            <a href="ilanlar.html">
+              <h1 style="text-align: center;margin-top: 100px;" class="text-white">PORTFÖYLER</h1>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 ">
+        <div class="card border-0 xs-card">
+          <img class="card-img card-ust-sag img-fluid" src="img/ustsagfoto1.png" alt="Haber Resmi">
+          <div class="card-img-overlay card-img-overlay-text-sag">
+            <a href="projeler.html">
+              <h1 style="text-align: center;margin-top: 20px;" class="text-white">PROJELER</h1>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="card border-0 mt-2">
+          <img class="card-img card-ust-sag img-fluid" src="img/ustsagfoto3.jpg" alt="Haber Resmi">
+          <div class="card-img-overlay card-img-overlay-text-sag">
+            <a href="ofisler.html">
+              <h1 style="text-align: center;margin-top: 20px;" class="text-white">OFİSLER</h1>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 card-ust">
+
+        <div class="card border-0">
+          <img class="card-img img-fluid" src="img/ustorta.jpeg" alt="Haber Resmi">
+          <div class="card-img-overlay card-img-overlay-text">
+            <a href="iletisim.html">
+              <h1 style="text-align: center;margin-top: 100px;" class="text-white">İLETİŞİM</h1>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Daha fazla bilgi kısmı -->
+
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <img class="img-fluid" src="img/anaimg2.jpg" height="400" width="1200">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Relax Emlak</h1>
+          <p class="lead fw-normal">TÜRKİYE GENELİNDE FAALİYET GÖSTEREN OFİSLERİ İLE EMLAK SEKTÖRÜNÜN GERÇEK LİDERİ!</p>
+          <p class="lead fw-normal">ŞUBEMİZ OLMAK İSTER MİSİNİZ?</p>
+          <a class="btn btn-outline-dark" href="uyelik.html">Daha fazla bilgi alın...</a>
+        </div>
+      </div>
+
+      <!-- Kartlar-->
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/istanbul1.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">İstanbul</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large">243 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/ankara.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ankara</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large">150 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/izmir.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">İzmir</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large;">76 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/bursa.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bursa</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large">67 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/adana.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Adana</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large">65 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/gaziantep.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Gaziantep</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large;">64 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/diyarbakır.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Diyarbakır</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large">60 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/manisa.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Manisa</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large">51 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+              style="background-image: url('img/şanlıurfa.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Şanlıurfa</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/webProjesi.png" alt="Bootstrap" width="32" height="32"
+                      class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <p style="font-size:x-large;">40 İlan</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--jQoery-->
+
+      <div class="container">
+        <div style="font-weight:bold ;" id="kutu1">Danışman Şeflerimizi Görmek İçin Tıklayınız</div>
+        <div id="kutu2">
+          <div class="row">
+            <div style="width: 17rem;background-color:black;">
+              <img height="300px" width="375px" class="card-img-top img-fluid" src="img/avatar.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 style="color:white" class="card-title">İsmail Kılıç</h5>
+                <p style="color:white" class="card-text">Relax Emlak Müşteri Temsilci Şefi</p>
+                <a href="danisman2.html" class="btn btn-light">İlgili kişiye git</a>
+              </div>
+            </div>
+            <div style="width: 17rem;background-color:black;">
+              <img height="300px" width="375px" class="card-img-top img-fluid" src="img/avatarvector.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 style="color:white" class="card-title">Mustafa Fatih Yıldız</h5>
+                <p style="color:white" class="card-text">Relax Emlak Müşteri Temsilci Şefi</p>
+                <a href="danisman1.html" class="btn btn-light">İlgili kişiye git</a>
+              </div>
+            </div>
+            <div style="width: 17rem;background-color:black;">
+              <img height="300px" width="375px" class="card-img-top img-fluid" src="img/avatarvector2.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 style="color:white" class="card-title">Aslı Hancı</h5>
+                <p style="color:white" class="card-text">Relax Emlak Müşteri Temsilci Şefi</p>
+                <a href="danisman3.html" class="btn btn-light">İlgili kişiye git</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="jumbotron" style="background-color: black;color: white;">
+          <br><br>
+          <h1>Danışmanlarımızla tanışmak ister misiniz?</h1>
+          <br><br>
+          <p>↓↓↓↓ Tüm danışmanlarımızı görmek için tıklayınız.</p>
+          <a href="danismanlar.html" class="btn btn-light">Danışmanlar</a>
+
+        </div>
+      </div>
+
+      <!--İşletme açmak istiyorum-->
+      <br> <br>
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-fluid" width="200" height="140" src="img/isletme1.jpg">
+            <h2 class="fw-normal">Emlak İşletmesi Açmak İstiyorum</h2>
+            <p>Franchising sistemi ile kendi emlak işletmemi kurmak isteyen girişimciyim</p>
+            <p><a style="background-color:black;color: white;" class="btn" href="uyelik.html">Detayları göster...
+                &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-fluid" width="200" height="140" src="img/emlak.jpg">
+            <h2 class="fw-normal">Sözleşmeli İşletme Açmak İstiyorum</h2>
+            <p>Sözleşmeye dayalı olarak taşınmaz ticaretiyle iştigal etmek isteyen girişimciyim.Ofis açmak istiyorum.
+            </p>
+            <p><a style="background-color:black;color: white;" class="btn" href="uyelik.html">Detayları
+                göster...&raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-fluid" width="200" height="140" src="img/yeterlilik.jpeg"><br><br>
+            <h2 class="fw-normal">Mesleki Yeterlilik Belgesi Almak İstiyorum.</h2>
+            <p>Sorumlu emlak danışmanı (Seviye 5) ve emlak danışmanı (Seviye 4) ulusal yeterliliklerine dayalı belge
+              almak istiyorum.</p>
+            <p><a style="background-color:black;color: white;" class="btn" href="uyelik.html">Detayları göster...
+                &raquo;</a></p>
+          </div>
+        </div>
+
+        <div class="container py-3">
+
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check" viewBox="0 0 16 16">
+              <title>Check</title>
+              <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+            </symbol>
+          </svg>
+
+  </main>
+
+  <!--Footers-->
+  <footer style="background-color:black;" class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a style="color:white !important;" href="webProjesi.html" class="nav-link  text-muted">Ana
+          Sayfa</a></li>
+      <li class="nav-item"><a style="color:white !important;" href="ilanlar.html"
+          class="nav-link  text-muted">İlanlar</a></li>
+      <li class="nav-item"><a style="color:white !important;" href="girisyap.html" class="nav-link text-muted">Giriş
+          Yap</a></li>
+      <li class="nav-item"><a style="color:white !important;" href="gizlilikvesartlar.html"
+          class="nav-link  text-muted">KVKK</a></li>
+      <li class="nav-item"><a style="color:white !important;" href="iletisim.html"
+          class="nav-link  text-muted">İletişim</a></li>
+    </ul>
+    <p style="color:white !important;" class="text-center text-muted"> © 2022 RELAX Emlak <a
+        style="text-decoration:none;font-weight: bold;color: white;" href="#"> Başa Dön </a></p>
+  </footer>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#kutu1").mouseenter(function () {
+        $("#kutu2").slideUp(1000).slideDown(2000);
+      });
+    });
+  </script>
+</body>
+
+</html>
